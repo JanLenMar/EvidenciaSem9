@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#título{
+    margin-top: 150px;
+    color: rgb(255, 0, 81);
+    font-size: 50px;
+}
+#encabezado img{
+    position: relative;
+    align-items: center;
+    display: grid;
+    width: 300px;
+    height: auto;
+}
+
+
+#precio_final{
+    text-align: center;
+}
+#PI{
+    text-align: center;
+}
+.desc{
+    text-align: center;
+}
+.btnCalcular{
+    text-align: end;
+    margin-right: 200px;
+}
+#PF{
+    text-align: center;
+}

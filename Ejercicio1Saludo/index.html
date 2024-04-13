@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo</title>
+    <script>
+        //<!--LO QUE SE COLOQUE EN ESTA ETIQUETA, SE PROGRAMARÁ PARA JAVASCRIP-->
+        //EN ESTAS ETIQUETAS SE PUEDE COLOCAR ETIQUETAS PARA PROGRAMAR EN JAVASCRIPT
+        document.write('Hola');
+        //LA LEYENDA LA COLOCÓ EN EL BODY//
+
+
+        //Para declarar las variables se usa: var, let y const//
+        var nombre;
+        var resultado;
+        function saludar(){
+            //Debe de tener el mismo nombre que 'onclick'
+            nombre = document.getElementById('nombre').value;
+            //A la variable 'nombre' se le asigna que se debe de buscar en el documento HTML el id con la leyenda 'nombre', y de la etiqueta que tenga esa leyenda, debe de extraer su valor
+            resultado = 'Bienvenido ' + nombre;
+            //El signo '+' sirve para concatenar, es decir, coloca la leyenda más lo que contiene la caja de texto
+           
+            //Se debe de imprimir la leyenda en la pantalla//
+            document.getElementById('res').innerHTML = resultado;
+        }
+
+
+    </script>
+</head>
+
+
+<body>
+    <input type="text" name="nombre" id="nombre">
+    <button id="btnSaludo" onclick="saludar();">Saludar</button>  
+    <label id="res"></label>
+</body>
+</html>
